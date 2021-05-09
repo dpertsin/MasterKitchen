@@ -33,7 +33,8 @@
 				<input class="border box" type="text" id="fkatigoria" name="fkatigoria" placeholder="Κατηγορίας υγείας">
 				<br></br>
 			<div class="slidecontainer">
-			<h3>Χρόνος</h3>
+				<h3>Χρόνος</h3>
+				<h3>Τεστ</h3>
 				<input type="range" min="5" max="200" value="100" class="slider" id="myRange">
 				<p>Μέγιστος χρόνος: <span id="time"></span>'</p>
 			</div>
@@ -52,14 +53,6 @@
 
 
 
-<script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("time");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-</script>
+<script src="/masterkitchen.js"></script>
 </body>
 </html>
