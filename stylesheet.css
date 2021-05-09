@@ -1,0 +1,141 @@
+header {
+	background: #101010;
+	height: 80px;
+	font-size: 15px;
+	color: white;
+	padding: 0px;
+}
+
+.header-top {
+	text-align: left;
+	font-size: 50px;
+	padding-left: 10px;
+	padding-top: 15px;
+	font-style: italic;
+}
+
+#logo {
+	color: white;
+	text-decoration: none;
+}
+
+.header-right{
+	float: right;
+	font-size: 30px;
+	line-height: 50px;
+	padding-right: 10px;
+	font-style: normal;
+}
+
+.header-right a{
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+.header-right a:hover{
+	color: yellow;
+}
+
+.border {
+	border: 2px solid grey;
+	width: 380px;
+	height: 800px;
+	border-radius: 20px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 15px;
+	color: grey;
+	padding-top: 60px;
+	padding-left: 50px;
+	float:left;
+}
+
+.border .box {
+	border: 2px solid grey;
+	width: 280px;
+	height: 8px;
+	border-radius: 5px;
+	margin: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding-left: 8px;
+}
+
+.box::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  opacity: 0.65; /* Firefox */
+}
+
+.box:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: grey;
+}
+
+.box::-ms-input-placeholder { /* Microsoft Edge */
+  color: grey;
+}
+
+.search .border h1{
+	color: grey;
+	border-bottom: 2px solid #DFDFDF;
+	margin-right: 240px;
+	padding-bottom: 15px;
+}
+
+.search .border h3{
+	color: grey;
+	float: none;
+	margin-left: 0px;
+}
+
+.border .boxes{
+	position: relative;
+	color: blue;
+}
+
+.search {
+	padding-left: 80px;
+	padding-top: 20px;
+	margin: 0px;	
+}
+
+.search .results {
+	display: flex;
+	padding-left: 50px;
+}
+
+.slider {
+	width: 300px;
+}
+
+.SearchButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	margin-left: 90px;
+}
+.SearchButton:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.SearchButton:active {
+	position:relative;
+	top:1px;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
