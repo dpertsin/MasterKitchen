@@ -1,3 +1,6 @@
+
+
+
 header {
 	background: #101010;
 	height: 80px;
@@ -83,7 +86,7 @@ header {
 	padding-bottom: 15px;
 }
 
-.search .border h3{
+.search .border {
 	color: grey;
 	float: none;
 	margin-left: 0px;
