@@ -9,6 +9,7 @@ In order to execute, it requires a web server or local testing software like xam
 
 ## Getting Started
 ο φάκελος Recipe App with Api είναι μόνο με html/css/JavaScript οπότε τρέχει χωρίς localhost server.
+
 ο φάκελος MasterKitchen χρειάζεται δημιουργία τοπικού server (κατα προτίμηση xampp) και για περισσότερες πληροφορίες διαβάστε το guide-for-login-register.docx μέσα στο φάκελο MasterKitchen
 
 ## Version
