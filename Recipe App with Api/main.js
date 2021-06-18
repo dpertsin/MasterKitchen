@@ -2,6 +2,11 @@ const searchForm = document.querySelector('form');
 const searchResultDiv = document.querySelector('.search-results');
 const container = document.querySelector('.container');
 let searchQuery = '';
+let mealTypeForm = '%';
+let cuisineTypeForm = '%';
+let yieldForm = '%';
+let dietTypeForm = '%';
+let timeForm = '%';
 const APP_ID = '8ff39162';
 const APP_key = '28b831b2bca22d9ba0af01150bb0a7b7';
 
@@ -12,12 +17,19 @@ var to = 9;
 searchForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     searchQuery = e.target.querySelector('input').value;
+    mealTypeForm = e.target.querySelector('#meal').value;
+    cuisineTypeForm = e.target.querySelector('#cuisine').value;
+    yieldForm = e.target.querySelector('#yield').value;
+    dietTypeForm = e.target.querySelector('#diet').value;
+    timeForm = e.target.querySelector('#myRange').value;
+
     console.log(searchQuery);
+    console.log(cuisineTypeForm);
     fetchAPI();
 });
 
 async function fetchAPI(){
-    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=${from}&to=${to}`;
+    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=${from}&to=${to}&mealType=${mealTypeForm}&cuisineType=${cuisineTypeForm}&yield=${yieldForm}&diet=${dietTypeForm}&time=${timeForm}`;
     const response = await fetch(baseURL);
     const data = await response.json();
     generateHTML(data.hits);

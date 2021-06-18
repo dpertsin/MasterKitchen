@@ -25,31 +25,38 @@
                 
                     <input type="text" class="padding-on-input" placeholder="Συστατικά που περιλαμβάνονται">
                     <input type="text" class="padding-on-input" placeholder="Συστατικά προς εξαίρεση">
-                    <select class="form-select">
-                        <option selected>Είδος φαγητού</option>
-                        <option value="breakfast">Πρωινό</option>
-                        <option value="lunch">Μεσημεριανό</option>
-                        <option value="afternoon">Απογευματινό</option>
-                        <option value="dinner">Βραδινό</option>
+                    <select class="form-select" id="meal">
+                        <option value="%" selected>Είδος φαγητού</option>
+                        <option value="Breakfast">Πρωινό</option>
+                        <option value="Lunch">Μεσημεριανό</option>
+                        <option value="Snack">Σνακ</option>
+                        <option value="Dinner">Βραδινό</option>
                     </select>
-                    <select class="form-select">
-                        <option selected>Είδος κουζίνας</option>
-                        <option value="greek-cuisine">Ελληνική κουζίνα</option>
-                        <option value="america-cuisine">Αμερικάνικη κουζίνα</option>
-                        <option value="italian-cuisine">Ιταλική κουζίνα</option>
+                    <select class="form-select" id="cuisine">
+                        <option value="%" selected>Είδος κουζίνας</option>
+                        <option value="Asian">Ασιατική κουζίνα</option>
+                        <option value="American">Αμερικάνικη κουζίνα</option>
+                        <option value="Italian">Ιταλική κουζίνα</option>
+                        <option value="British">Αγγλική κουζίνα</option>
+                        <option value="Chinese">Κινέζικη κουζίνα</option>
+                        <option value="French">Γαλλική κουζίνα</option>
+                        <option value="Indian">Ινδική κουζίνα</option>
                     </select>
-                    <select class="form-select">
-                        <option selected>Βαθμός δυσκολίας</option>
+                    <select class="form-select" id="yield">
+                        <option value="%" selected>Βαθμός δυσκολίας</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="form-select">
-                        <option selected>Κατηγορία υγείας</option>
-                        <option value="healthy">Υγιεινό</option>
-                        <option value="not-healthy">Μη Υγιεινό</option>
+                    <select class="form-select" id="diet">
+                        <option value="%" selected>Κατηγορία υγείας</option>
+                        <option value="Balanced">ισορροπημένη</option>
+                        <option value="High-Fiber">υψηλής περιεκτικότητας σε ίνες</option>
+                        <option value="High-Protein">υψηλή πρωτείνη</option>
+                        <option value="Low-Carb">χαμηλών υδατανθράκων</option>
+                        <option value="Low-Fat">χαμηλά λιπαρά</option>
                     </select>
                     <h5>Χρόνος υλοποίησης:</h5>
                     <input type="range" min="0" max="200" value="0" id="myRange">
