@@ -14,7 +14,11 @@
     <header>
         <!-- Εδώ θα μπει το Header -->
     </header>
-
+ <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="login.php">LOGIN</a>
+  <a class="navbar-brand" href="register.php">REGISTER</a>
+  
+</nav>
     <div class="container">
         <div class="row">
             <div class="col-md-3 filters">
