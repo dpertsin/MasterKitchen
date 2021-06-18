@@ -8,7 +8,8 @@ This project was written in HTML, CSS, Bootstrap, JavaScript, jQuery, PHP and SQ
 In order to execute, it requires a web server or local testing software like xampp or wamp.
 
 ## Getting Started
--
+ο φάκελος Recipe App with Api είναι μόνο με html/css/JavaScript οπότε τρέχει χωρίς localhost server.
+ο φάκελος MasterKitchen χρειάζεται δημιουργία τοπικού server (κατα προτίμηση xampp) και για περισσότερες πληροφορίες διαβάστε το guide-for-login-register.docx μέσα στο φάκελο MasterKitchen
 
 ## Version
 0.1.0-beta
